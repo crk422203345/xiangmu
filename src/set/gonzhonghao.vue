@@ -42,6 +42,10 @@
                 <img src="../img/18.png" alt="">
             </p>
           </div>
+          <div class="anniou">
+            <el-button  plain class="anniou1">修改</el-button>
+            <el-button  plain class="anniou2">重置</el-button>
+          </div>
         </div>
       </el-col>
     </el-row>
@@ -107,6 +111,38 @@ export default {
     width: 300px;
 }
 .toubu p:nth-of-type(1) span{
-  margin: 0 0 0 0;
+  margin: 0px 35px 0px 20px;
+}
+.toubu p:nth-of-type(2) span{
+  margin-right: 35px;
+}
+.toubu p:nth-of-type(3) span{
+  margin-right: 35px;
+}
+.toubu p:nth-of-type(4) {
+    display: flex;
+    align-items:flex-start ;
+}
+.toubu p:nth-of-type(4) span{
+    margin: 0px 35px 0px 18px;
+}
+.toubu p:nth-of-type(5) {
+    display: flex;
+    align-items:flex-start ;
+}
+.toubu p:nth-of-type(5) span{
+    margin: 0px 20px 0px 18px;
+}
+.toubu{
+  border-bottom:dotted  1px #999;
+}
+.anniou{
+  margin-top: 20px;
+  display: flex;
+  justify-content:center;
+}
+.anniou1{
+  background:#1ab394;
+  color: white;
 }
 </style>

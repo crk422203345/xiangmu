@@ -160,6 +160,26 @@ export default new Router({
         {
           path: 'zhifu',
           component: () => import('./set/zhifu.vue')
+        },
+        {
+          path: 'denglu',
+          component: () => import('./set/denglu.vue')
+        },
+        {
+          path: 'dandian',
+          component: () => import('./set/dandian.vue')
+        },
+        {
+          path: 'quanju',
+          component: () => import('./set/quanju.vue')
+        },
+        {
+          path: 'youxiang',
+          component: () => import('./set/youxiang.vue')
+        },
+        {
+          path: 'jichu',
+          component: () => import('./set/jichu.vue')
         }
       ]
     },

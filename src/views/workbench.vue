@@ -89,11 +89,11 @@
               设置
             </template>
             <el-menu-item-group>
-              <el-menu-item index="1-1">全局设置</el-menu-item>
-              <el-menu-item index="1-2">基本设置</el-menu-item>
-              <el-menu-item index="1-3">邮箱设置</el-menu-item>
-              <el-menu-item index="1-4">单点登录设置</el-menu-item>
-              <el-menu-item index="1-5">第三方登录设置</el-menu-item>
+              <el-menu-item index="/workbench/quanju">全局设置</el-menu-item>
+              <el-menu-item index="/workbench/jichu">基本设置</el-menu-item>
+              <el-menu-item index="/workbench/youxiang">邮箱设置</el-menu-item>
+              <el-menu-item index="/workbench/dandian">单点登录设置</el-menu-item>
+              <el-menu-item index="/workbench/denglu">第三方登录设置</el-menu-item>
               <el-menu-item index="/workbench/zhifu">支付插件</el-menu-item>
               <el-menu-item index="/workbench/gonzhonghao">公众号设置</el-menu-item>
               <el-menu-item index="/workbench/peisong">配送方式</el-menu-item>
