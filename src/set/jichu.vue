@@ -45,7 +45,7 @@
               </li>
               <li>
                 <span>*访问后缀</span>
-                <el-select v-model="value" placeholder="请选择">
+                <el-select v-model="value" placeholder=".htm">
                   <el-option
                     v-for="item in options"
                     :key="item.value"
@@ -112,7 +112,7 @@ export default {
       options: [
         {
           value: "选项1",
-          label: "黄金糕"
+          label: ".htm"
         },
         {
           value: "选项2",

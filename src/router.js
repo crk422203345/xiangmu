@@ -18,6 +18,9 @@ export default new Router({
           component: () => import('./commodity/shangpin.vue')
         },
         {
+          path: 'fabu',
+          component: () => import('./commodity/fabu.vue')       },
+        {
           path: 'fenlei',
           component: () => import('./commodity/fenlei.vue')
         },

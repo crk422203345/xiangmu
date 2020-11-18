@@ -27,7 +27,7 @@
                 </el-table>
               </template>
               <div style="margin-top: 20px" class="yanse5">
-                 <el-button>保存排序</el-button>
+                <el-button>保存排序</el-button>
               </div>
             </template>
           </div>

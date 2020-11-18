@@ -26,7 +26,7 @@
             </template>
             <el-menu-item-group>
               <el-menu-item index="/workbench/shangpin">商品管理</el-menu-item>
-              <el-menu-item index="1-2">发布商品</el-menu-item>
+              <el-menu-item index="/workbench/fabu">发布商品</el-menu-item>
               <el-menu-item index="/workbench/fenlei">分类管理</el-menu-item>
               <el-menu-item index="/workbench/pinpai">品牌管理</el-menu-item>
               <el-menu-item index="/workbench/guige">规格管理</el-menu-item>
