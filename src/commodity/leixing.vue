@@ -23,12 +23,12 @@
                 @selection-change="handleSelectionChange"
               >
                 <el-table-column type="selection" width="100"></el-table-column>
-                <el-table-column prop="id" label="ID" width="150" class="id">
+                <el-table-column prop="id" label="ID" width="158" class="id">
                 </el-table-column>
                 <el-table-column
                   prop="name"
                   label="类型名称"
-                  width="180"
+                  width="190"
                   class="juzhong"
                 >
                 </el-table-column>
@@ -36,21 +36,21 @@
                   prop="address"
                   label="商品分类模板前缀"
                   show-overflow-tooltip
-                  width="180"
+                  width="190"
                 >
                 </el-table-column>
                 <el-table-column
                   prop="jinxuan"
                   label="商品内容模板前缀"
                   show-overflow-tooltip
-                  width="180"
+                  width="190"
                 >
                 </el-table-column>
                 <el-table-column
                   prop="shuxing"
                   label="属性列表"
                   show-overflow-tooltip
-                  width="180"
+                  width="190"
                 >
                 </el-table-column>
                 <el-table-column
@@ -59,8 +59,12 @@
                   show-overflow-tooltip
                   width="180"
                 >
-                  <img src="../img/12.png" alt="" class="tupian12" />
-                  <img src="../img/13.png" alt="" />
+                  <router-link to="/workbench/index5">
+                    <img src="../img/12.png" alt="" class="tupian12" />
+                  </router-link>
+                  <el-button type="text" @click="open">
+                    <img src="../img/13.png" alt=""/>
+                  </el-button>
                 </el-table-column>
               </el-table>
               <div style="margin-top: 20px" class="yanse5">
@@ -167,7 +171,24 @@ export default {
     },
     handleSelectionChange(val) {
       this.multipleSelection = val;
-    }
+    },
+    open() {
+        this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+          this.$message({
+            type: 'success',
+            message: '删除成功!'
+          });
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          });          
+        });
+      }
   }
 };
 </script>

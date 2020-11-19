@@ -26,14 +26,14 @@
                 <el-table-column
                   prop="id"
                   label="ID"
-                  width="280"
+                  width="290"
                   class="juzhong"
                 >
                 </el-table-column>
                 <el-table-column
                   prop="name1"
                   label="角色名"
-                  width="280"
+                  width="290"
                   class="juzhong"
                 >
                 </el-table-column>
@@ -41,7 +41,7 @@
                   prop="name2"
                   label="排列顺序"
                   show-overflow-tooltip
-                  width="280"
+                  width="288"
                 >
                 </el-table-column>
                 <el-table-column
@@ -50,8 +50,13 @@
                   show-overflow-tooltip
                   width="280"
                 >
-                  <img src="../img/12.png" alt="" class="tupian12" />
-                  <img src="../img/13.png" alt="" />
+                  <router-link to="/workbench/index10">
+                    <img src="../img/12.png" alt="" class="tupian12" />
+                </router-link>
+
+                <el-button type="text" @click="open">
+                    <img src="../img/13.png" alt=""/>
+                </el-button>
                 </el-table-column>
               </el-table>
               <div style="margin-top: 20px" class="yanse5">
@@ -143,7 +148,24 @@ export default {
     },
     handleSelectionChange(val) {
       this.multipleSelection = val;
-    }
+    },
+     open() {
+        this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+          this.$message({
+            type: 'success',
+            message: '删除成功!'
+          });
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          });          
+        });
+      }
   }
 };
 </script>

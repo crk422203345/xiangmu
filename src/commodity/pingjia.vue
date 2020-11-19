@@ -55,7 +55,7 @@
                 <el-table-column
                   prop="name"
                   label="咨询时间"
-                  width="260"
+                  width="270"
                   class="juzhong"
                 >
                 </el-table-column>
@@ -63,14 +63,14 @@
                   prop="address"
                   label="咨询商品"
                   show-overflow-tooltip
-                  width="260"
+                  width="270"
                 >
                 </el-table-column>
                 <el-table-column
                   prop="jinxuan"
                   label="咨询人"
                   show-overflow-tooltip
-                  width="180"
+                  width="208"
                 >
                 </el-table-column>
                 <el-table-column
@@ -79,8 +79,12 @@
                   show-overflow-tooltip
                   width="200"
                 >
-                  <img src="../img/14.png" alt="" class="tupian12" />
-                  <img src="../img/13.png" alt="" />
+                  <router-link to="/workbench/reply">
+                    <img src="../img/14.png" alt="" class="tupian12" />
+                  </router-link>
+                  <el-button type="text" @click="open">
+                    <img src="../img/13.png" alt="" />
+                  </el-button>
                 </el-table-column>
               </el-table>
               <div style="margin-top: 20px" class="yanse5">
@@ -118,7 +122,7 @@ export default {
       input7: "",
       tableData: [
         {
-           id: "27",
+          id: "27",
           name: "2018-05-05 13:09:24",
           address: "Apple iPad Air 2 平板电脑",
           jinxuan: "admin"
@@ -130,31 +134,31 @@ export default {
           jinxuan: "admin"
         },
         {
-           id: "27",
+          id: "27",
           name: "2018-05-05 13:09:24",
           address: "Apple iPad Air 2 平板电脑",
           jinxuan: "admin"
         },
         {
-           id: "27",
+          id: "27",
           name: "2018-05-05 13:09:24",
           address: "Apple iPad Air 2 平板电脑",
           jinxuan: "admin"
         },
         {
-           id: "27",
+          id: "27",
           name: "2018-05-05 13:09:24",
           address: "Apple iPad Air 2 平板电脑",
           jinxuan: "admin"
         },
         {
-           id: "27",
+          id: "27",
           name: "2018-05-05 13:09:24",
           address: "Apple iPad Air 2 平板电脑",
           jinxuan: "admin"
         },
         {
-           id: "27",
+          id: "27",
           name: "2018-05-05 13:09:24",
           address: "Apple iPad Air 2 平板电脑",
           jinxuan: "admin"
@@ -214,6 +218,25 @@ export default {
     },
     handleSelectionChange(val) {
       this.multipleSelection = val;
+    },
+    open() {
+      this.$confirm("此操作将永久删除该文件, 是否继续?", "提示", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+        type: "warning"
+      })
+        .then(() => {
+          this.$message({
+            type: "success",
+            message: "删除成功!"
+          });
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "已取消删除"
+          });
+        });
     }
   }
 };

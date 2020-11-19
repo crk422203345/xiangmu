@@ -26,21 +26,21 @@
                 <el-table-column
                   prop="id"
                   label="ID"
-                  width="150"
+                  width="160"
                   class="juzhong"
                 >
                 </el-table-column>
                 <el-table-column
                   prop="name1"
                   label="公司名称"
-                  width="210"
+                  width="220"
                   class="juzhong"
                 >
                 </el-table-column>
                 <el-table-column
                   prop="name2"
                   label="官网地址"
-                  width="210"
+                  width="230"
                   class="juzhong"
                 >
                 </el-table-column>
@@ -48,7 +48,7 @@
                   prop="jinxuan"
                   label="排列"
                   show-overflow-tooltip
-                  width="210"
+                  width="216"
                 >
                   <el-input
                     v-model="input4"
@@ -62,9 +62,16 @@
                   show-overflow-tooltip
                   width="280"
                 >
-                <img src="../img/14.png" alt="" class="tupian12">
-                  <img src="../img/12.png" alt="" class="tupian12" />
-                  <img src="../img/13.png" alt="" />
+                  <router-link to="/workbench/reply">
+                    <img src="../img/14.png" alt="" class="tupian12" />
+                  </router-link>
+                  <router-link to="/workbench/index27">
+                    <img src="../img/12.png" alt="" class="tupian12" />
+                  </router-link>
+
+                  <el-button type="text" @click="open">
+                    <img src="../img/13.png" alt="" />
+                  </el-button>
                 </el-table-column>
               </el-table>
               <div style="margin-top: 20px" class="yanse5">
@@ -103,37 +110,37 @@ export default {
         {
           id: "11303",
           name1: "圆通速递",
-          name2:"http://www.yto.net.cn"
+          name2: "http://www.yto.net.cn"
         },
         {
-           id: "11303",
+          id: "11303",
           name1: "圆通速递",
-          name2:"http://www.yto.net.cn"
+          name2: "http://www.yto.net.cn"
         },
         {
-           id: "11303",
+          id: "11303",
           name1: "圆通速递",
-          name2:"http://www.yto.net.cn"
+          name2: "http://www.yto.net.cn"
         },
         {
-           id: "11303",
+          id: "11303",
           name1: "圆通速递",
-          name2:"http://www.yto.net.cn"
+          name2: "http://www.yto.net.cn"
         },
         {
-           id: "11303",
+          id: "11303",
           name1: "圆通速递",
-          name2:"http://www.yto.net.cn"
+          name2: "http://www.yto.net.cn"
         },
         {
-           id: "11303",
+          id: "11303",
           name1: "圆通速递",
-          name2:"http://www.yto.net.cn"
+          name2: "http://www.yto.net.cn"
         },
         {
-           id: "11303",
+          id: "11303",
           name1: "圆通速递",
-          name2:"http://www.yto.net.cn"
+          name2: "http://www.yto.net.cn"
         }
       ],
       multipleSelection: []
@@ -157,6 +164,25 @@ export default {
     },
     handleSelectionChange(val) {
       this.multipleSelection = val;
+    },
+    open() {
+      this.$confirm("此操作将永久删除该文件, 是否继续?", "提示", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+        type: "warning"
+      })
+        .then(() => {
+          this.$message({
+            type: "success",
+            message: "删除成功!"
+          });
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "已取消删除"
+          });
+        });
     }
   }
 };

@@ -3,6 +3,19 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+// export default new Router({
+//   mode: 'hash',
+//   routes: [
+//     {
+//       path: '/',
+//       name:'modification',
+//       component: () => import('./components/modification.vue')
+//     }
+//   ]
+// })
+
+
+
 export default new Router({
   mode: 'hash',
   routes: [
@@ -183,6 +196,126 @@ export default new Router({
         {
           path: 'jichu',
           component: () => import('./set/jichu.vue')
+        },
+        {
+          path: 'index1',
+          component: () => import('./query/index1.vue')
+        },
+        {
+          path: 'index2',
+          component: () => import('./query/index2.vue')
+        },
+        {
+          path: 'index3',
+          component: () => import('./query/index3.vue')
+        },
+        {
+          path: 'index4',
+          component: () => import('./query/index4.vue')
+        },
+        {
+          path: 'index5',
+          component: () => import('./query/index5.vue')
+        },
+        {
+          path: 'index6',
+          component: () => import('./query/index6.vue')
+        },
+        {
+          path: 'index7',
+          component: () => import('./query/index7.vue')
+        },
+        {
+          path: 'index8',
+          component: () => import('./query/index8.vue')
+        },
+        {
+          path: 'index9',
+          component: () => import('./query/index9.vue')
+        },
+        {
+          path: 'index10',
+          component: () => import('./query/index10.vue')
+        },
+        {
+          path: 'index11',
+          component: () => import('./query/index11.vue')
+        },
+        {
+          path: 'index12',
+          component: () => import('./query/index12.vue')
+        },
+        {
+          path: 'index13',
+          component: () => import('./query/index13.vue')
+        },
+        {
+          path: 'index14',
+          component: () => import('./query/index14.vue')
+        },
+        {
+          path: 'index15',
+          component: () => import('./query/index15.vue')
+        },
+        {
+          path: 'index16',
+          component: () => import('./query/index16.vue')
+        },
+        {
+          path: 'index17',
+          component: () => import('./query/index17.vue')
+        },
+        {
+          path: 'index18',
+          component: () => import('./query/index18.vue')
+        },
+        {
+          path: 'index19',
+          component: () => import('./query/index19.vue')
+        },
+        {
+          path: 'index20',
+          component: () => import('./query/index20.vue')
+        },
+        {
+          path: 'index21',
+          component: () => import('./query/index21.vue')
+        },
+        {
+          path: 'index22',
+          component: () => import('./query/index22.vue')
+        },
+        {
+          path: 'index23',
+          component: () => import('./query/index23.vue')
+        },
+        {
+          path: 'index24',
+          component: () => import('./query/index24.vue')
+        },
+        {
+          path: 'index25',
+          component: () => import('./query/index25.vue')
+        },
+        {
+          path: 'index26',
+          component: () => import('./query/index26.vue')
+        },
+        {
+          path: 'index27',
+          component: () => import('./query/index27.vue')
+        },
+        {
+          path: 'index28',
+          component: () => import('./query/index28.vue')
+        },
+        {
+          path: 'select',
+          component: () => import('./components/select.vue')
+        },
+        {
+          path: 'reply',
+          component: () => import('./components/reply.vue')
         }
       ]
     },

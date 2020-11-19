@@ -64,9 +64,8 @@
                 <el-table-column type="selection" width="55"> </el-table-column>
                 <el-table-column label="图片" width="70">
                   <img src="../img/11.png" alt="" />
-                  <!-- <template slot-scope="scope">{{ scope.row.date }}</template> -->
                 </el-table-column>
-                <el-table-column prop="name" label="商品名称" width="180">
+                <el-table-column prop="name" label="商品名称" width="243">
                 </el-table-column>
                 <el-table-column
                   prop="address"
@@ -101,8 +100,10 @@
                   label="操作"
                   show-overflow-tooltip
                 >
-                  <img src="../img/12.png" alt="" class="tupian12" />
-                  <img src="../img/13.png" alt="" />
+                  <router-link to="/workbench/index1">
+                    <img src="../img/12.png" alt="" class="tupian12" />
+                  </router-link>
+                  <el-button type="text" @click="open"><img src="../img/13.png" alt="" /></el-button>
                 </el-table-column>
               </el-table>
               <div style="margin-top: 20px" class="yanse5">
@@ -266,7 +267,24 @@ export default {
     },
     handleSelectionChange(val) {
       this.multipleSelection = val;
-    }
+    },
+    open() {
+        this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+          this.$message({
+            type: 'success',
+            message: '删除成功!'
+          });
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          });          
+        });
+      }
   }
 };
 </script>

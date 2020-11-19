@@ -20,12 +20,14 @@
                 <el-table :data="tableData" stripe style="width: 100%">
                   <el-table-column prop="date" label="ID" width="100">
                   </el-table-column>
-                  <el-table-column prop="name" label="appid" width="450">
+                  <el-table-column prop="name" label="appid" width="504">
                   </el-table-column>
                   <el-table-column prop="address" label="是否禁用" width="450">
                   </el-table-column>
                   <el-table-column prop="" label="操作" width="150">
-                    <img src="../img/12.png" alt="" />
+                    <router-link to="/workbench/index24">
+                    <img src="../img/12.png" alt="" class="tupian12" />
+                    </router-link>
                   </el-table-column>
                 </el-table>
               </template>

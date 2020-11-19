@@ -16,13 +16,15 @@
                 <el-table :data="tableData" stripe style="width: 100%">
                   <el-table-column prop="date" label="ID" width="100">
                   </el-table-column>
-                  <el-table-column prop="name" label="名称" width="450">
+                  <el-table-column prop="name" label="名称" width="475">
                   </el-table-column>
-                  <el-table-column prop="address" label="排序" width="450">
+                  <el-table-column prop="address" label="排序" width="479">
                       <el-input v-model="input3" placeholder="2" class="changdu"></el-input>
                   </el-table-column>
                   <el-table-column prop="" label="操作" width="150">
-                    <img src="../img/12.png" alt="" />
+                    <router-link to="/workbench/index22">
+                      <img src="../img/12.png" alt="" class="tupian12" />
+                    </router-link>
                   </el-table-column>
                 </el-table>
               </template>
