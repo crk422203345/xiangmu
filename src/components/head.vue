@@ -38,7 +38,7 @@ export default {
         message: "退出成功",
         type: "success"
       });
-      this.$router.push("/register");
+      this.$router.push("/");
     }
     ,
     Click: function() {

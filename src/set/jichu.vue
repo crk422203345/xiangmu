@@ -85,8 +85,8 @@
             </ul>
           </div>
           <div class="anniou">
-            <el-button plain class="anniou1">修改</el-button>
-            <el-button plain class="anniou2">重置</el-button>
+            <el-button  class="anniou1">修改</el-button>
+            <el-button  class="anniou2">重置</el-button>
           </div>
         </div>
       </el-col>

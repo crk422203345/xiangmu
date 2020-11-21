@@ -113,7 +113,6 @@
     </el-container>
   </div>
 </template>
-
 <script>
 import Header from "../components/head.vue";
 export default {
@@ -124,6 +123,13 @@ export default {
 };
 </script>
 <style scoped>
+.xiang{
+  position: fixed;
+  top: 0px;
+  right: 15px;
+  width: 5px;
+  height: 400px;
+}
 .el-header {
   color: #333;
   line-height: 60px;

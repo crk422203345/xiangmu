@@ -10,9 +10,6 @@
     <el-row>
       <el-col :span="24">
         <div class="grid-content bg-purple-light">
-          <!-- <div class="toubu5">
-            <el-button class="el-icon-plus tianjia">添加FTP管理</el-button>
-          </div> -->
           <div class="neirong">
             <template>
               <el-table

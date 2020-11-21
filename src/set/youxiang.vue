@@ -66,8 +66,8 @@
             <span>支持的标签: uid username resetKey resetPwd</span>
             </li>
             <li>
-                <span>找回密码内容</span>
-                <p><img src="../img/19.png" alt=""></p>
+            <span>找回密码内容</span>
+            <p><img src="../img/19.png" alt="" /></p>
             <el-input
                 type="textarea"
                 :rows="2"
@@ -77,7 +77,7 @@
             >
             </el-input>
             </li>
-             <li>
+            <li>
             <span>激活用户标题</span>
             <el-input
                 v-model="input7"
@@ -87,8 +87,8 @@
             <span>支持的标签: uid username resetKey resetPwd</span>
             </li>
             <li>
-                <span>激活用户内容</span>
-                <p><img src="../img/19.png" alt=""></p>
+            <span>激活用户内容</span>
+            <p><img src="../img/19.png" alt="" /></p>
             <el-input
                 type="textarea"
                 :rows="2"
@@ -101,8 +101,8 @@
         </ul>
         </div>
         <div class="anniou">
-        <el-button plain class="anniou1">修改</el-button>
-        <el-button plain class="anniou2">重置</el-button>
+        <el-button class="anniou1">修改</el-button>
+        <el-button class="anniou2">重置</el-button>
         </div>
     </div>
     </el-col>
@@ -127,11 +127,11 @@ return {
 };
 </script>
 <style scoped>
-.chandu3{
-    margin-left: 175px;
-    width: 812px;
-    height: 200px;
-    border-top: none;
+.chandu3 {
+margin-left: 175px;
+width: 812px;
+height: 200px;
+border-top: none;
 }
 .toubu ul li span:nth-of-type(1) {
 color: #666666;
@@ -166,23 +166,23 @@ margin: 0px 20px 0px 59px;
 .toubu ul li:nth-of-type(9) span:nth-of-type(1) {
 margin: 0px 20px 0px 59px;
 }
-.toubu ul li:nth-of-type(7) p{
-    display: inline-block;
-    width: 800px;
-    background: #f5f5f5;
-    padding: 5px;
-    border-radius: 5px 5px 0px 0px;
-    border:solid 1px #cccccc;
-    border-bottom: none;
+.toubu ul li:nth-of-type(7) p {
+display: inline-block;
+width: 800px;
+background: #f5f5f5;
+padding: 5px;
+border-radius: 5px 5px 0px 0px;
+border: solid 1px #cccccc;
+border-bottom: none;
 }
-.toubu ul li:nth-of-type(9) p{
-    display: inline-block;
-    width: 800px;
-    background: #f5f5f5;
-    padding: 5px;
-    border-radius: 5px 5px 0px 0px;
-    border:solid 1px #cccccc;
-    border-bottom: none;
+.toubu ul li:nth-of-type(9) p {
+display: inline-block;
+width: 800px;
+background: #f5f5f5;
+padding: 5px;
+border-radius: 5px 5px 0px 0px;
+border: solid 1px #cccccc;
+border-bottom: none;
 }
 .toubu ul li span:nth-of-type(2) {
 color: #999999;
@@ -234,6 +234,6 @@ color: white;
 width: 300px;
 }
 .el-textarea__inner {
-    height: 300px;
+height: 300px;
 }
 </style>
